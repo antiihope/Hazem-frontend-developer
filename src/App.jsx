@@ -2,7 +2,7 @@ import './App.css';
 import Navbar from './components/navbar';
 import Hero from './components/hero';
 
-import SearchForm from './components/search';
+import SearchForm from './components/SearchForm';
 import { useEffect } from 'react';
 import Login from './components/Auth';
 import { verifyAuth, abortAuth } from './redux/actions/authActions';
