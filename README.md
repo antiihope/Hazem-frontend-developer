@@ -39,3 +39,5 @@ You can use these cridentials to login and use the search functionality.
 - Authontication is done using JWT.
 - The token is stored in the cookies and is valid for 2d.
 - After that you will be logged out and will have to login again.
+
+[![Here's a video of the app in action](https://drive.google.com/file/d/1SyNJJSil6TK9BJiO2h88hdj3QfaTRYSa/view)](https://drive.google.com/file/d/1SyNJJSil6TK9BJiO2h88hdj3QfaTRYSa/view)
