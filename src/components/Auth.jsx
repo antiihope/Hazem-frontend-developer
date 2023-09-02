@@ -46,7 +46,9 @@ const Login = () => {
             <p className="text-xl font-medium text-blue-800 dark:text-white">
               Sign in to your account to use the search
             </p>
-            <label className="block text-sm mt-4 text-blue-200">{'>'} Hint: it rhymes with "Transform" </label>
+            <label className="block text-sm mt-4 text-blue-200">
+              {'>'} Hint: it rhymes with &quot;Transform&quot;{' '}
+            </label>
             <form className="mt-4" onSubmit={handleSubmit}>
               <label className="block text-sm mt-4 text-blue-200" htmlFor="cus_email">
                 Username
