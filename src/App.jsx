@@ -1,14 +1,15 @@
 import './App.css';
 import Navbar from './components/navbar';
 import Hero from './components/hero';
-
 import SearchForm from './components/SearchForm';
-import { useEffect } from 'react';
 import Login from './components/Auth';
+import Footer from './components/Footer';
+
+import { useEffect } from 'react';
 import { verifyAuth, abortAuth } from './redux/actions/authActions';
 import { useDispatch, useSelector } from 'react-redux';
 
-function MyComponent() {
+function App() {
   const dispatch = useDispatch();
   const loggedIn = useSelector((state) => state.isAuthenticated);
 
@@ -35,18 +36,9 @@ function MyComponent() {
         <Hero />
         {loggedIn ? <SearchForm /> : <Login />}
       </div>
-      <div className="absolute container px-4 mx-auto flex flex-wrap items-center justify-between">
-        <div className="w-full relative flex justify-between lg:w-auto  px-4 lg:static lg:block lg:justify-start">
-          <a
-            className="text-3xl font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap text-blue-300"
-            href="#"
-          >
-            <h1>Rocket Science</h1>
-          </a>
-        </div>
-      </div>
+      <Footer />
     </>
   );
 }
 
-export default MyComponent;
+export default App;
